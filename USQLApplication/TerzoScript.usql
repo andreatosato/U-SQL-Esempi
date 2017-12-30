@@ -1,0 +1,27 @@
+﻿REFERENCE ASSEMBLY NationsLogic;
+
+@elenco =  
+    EXTRACT Numero int,
+            Nazionalita string,
+            Ruolo string,
+            Nome string
+    FROM "/Dati/PrimoScript/Contacts.csv"
+    USING Extractors.Csv(skipFirstNRows: 1);
+
+@FinalUE = SELECT *, 
+                "2017-2018" AS Annata               
+         FROM @elenco
+         WHERE NationsLogic.Nations.IsEuropean(Nazionalita);
+
+@FinalNonUE = SELECT *, 
+                "2017-2018" AS Annata               
+         FROM @elenco
+         WHERE !NationsLogic.Nations.IsEuropean(Nazionalita);
+
+OUTPUT @FinalUE
+TO "/Dati/PrimoScript/RisultatoUE.csv" 
+USING Outputters.Csv();
+
+OUTPUT @FinalNonUE
+TO "/Dati/PrimoScript/RisultatoNonUE.csv" 
+USING Outputters.Csv();

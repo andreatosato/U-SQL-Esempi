@@ -1,0 +1,13 @@
+﻿@elenco =  
+    EXTRACT Numero int,
+            Nazionalita string,
+            Ruolo string,
+            Nome string
+    FROM "/Dati/PrimoScript/Contacts.csv"
+    USING Extractors.Csv(skipFirstNRows: 1);
+
+@Final = SELECT *, "2017-2018" AS Annata FROM @elenco;
+
+OUTPUT @Final
+TO "/Dati/PrimoScript/Risultato.csv" 
+USING Outputters.Csv();

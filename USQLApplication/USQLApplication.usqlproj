@@ -1,0 +1,44 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>161f1ed8-baaf-4413-a353-6031987e57b8</ProjectGuid>
+    <OutputType>File</OutputType>
+    <AssemblyName>Algebra.xml</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <Name>USQLApplication</Name>
+    <RootNamespace>USQLApplication</RootNamespace>
+    <RuntimeVersion>default</RuntimeVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Script Include="PrimoScript.usql" />
+    <Script Include="SecondoScript.usql" />
+    <Script Include="TerzoScript.usql" />
+    <ScriptCode Include="PrimoScript.usql.cs">
+      <DependentUpon>PrimoScript.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="SecondoScript.usql.cs">
+      <DependentUpon>SecondoScript.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="TerzoScript.usql.cs">
+      <DependentUpon>TerzoScript.usql</DependentUpon>
+    </ScriptCode>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NationsLogic\NationsLogic.csproj">
+      <Name>NationsLogic</Name>
+      <Project>{72ae6259-7f07-4231-a0b4-dc4f6a578d71}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(AppData)\Microsoft\DataLake\MsBuild\1.0\Usql.targets" />
+</Project>
