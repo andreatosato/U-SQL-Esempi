@@ -10,5 +10,5 @@ Risultato secondo script
 [Risultato con colonna Ue](/Dati/PrimoScript/RisultatoNazionalita.csv)
 
 Risultato terzo script
-[Risultato Non Ue](/Dati/PrimoScript/RisultatoNonUE.csv)
+[Risultato Non Ue](/Dati/PrimoScript/RisultatoNonUE.csv) e 
 [Risultato Ue](/Dati/PrimoScript/RisultatoUE.csv.csv)
