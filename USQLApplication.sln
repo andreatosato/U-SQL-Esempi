@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27110.0
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{182E2583-ECAD-465B-BB50-91101D7C24CE}") = "USQLApplication", "USQLApplication\USQLApplication.usqlproj", "{161F1ED8-BAAF-4413-A353-6031987E57B8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NationsLogic", "NationsLogic\NationsLogic.csproj", "{72AE6259-7F07-4231-A0B4-DC4F6A578D71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Runner", "Runner\Runner.csproj", "{6F69F08D-98F6-4308-A815-ABEE408F9951}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -56,6 +58,24 @@ Global
 		{72AE6259-7F07-4231-A0B4-DC4F6A578D71}.Release|x64.Build.0 = Release|Any CPU
 		{72AE6259-7F07-4231-A0B4-DC4F6A578D71}.Release|x86.ActiveCfg = Release|Any CPU
 		{72AE6259-7F07-4231-A0B4-DC4F6A578D71}.Release|x86.Build.0 = Release|Any CPU
+		{6F69F08D-98F6-4308-A815-ABEE408F9951}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F69F08D-98F6-4308-A815-ABEE408F9951}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F69F08D-98F6-4308-A815-ABEE408F9951}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6F69F08D-98F6-4308-A815-ABEE408F9951}.Debug|x64.Build.0 = Debug|Any CPU
+		{6F69F08D-98F6-4308-A815-ABEE408F9951}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6F69F08D-98F6-4308-A815-ABEE408F9951}.Debug|x86.Build.0 = Debug|Any CPU
+		{6F69F08D-98F6-4308-A815-ABEE408F9951}.Mock|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F69F08D-98F6-4308-A815-ABEE408F9951}.Mock|Any CPU.Build.0 = Debug|Any CPU
+		{6F69F08D-98F6-4308-A815-ABEE408F9951}.Mock|x64.ActiveCfg = Debug|Any CPU
+		{6F69F08D-98F6-4308-A815-ABEE408F9951}.Mock|x64.Build.0 = Debug|Any CPU
+		{6F69F08D-98F6-4308-A815-ABEE408F9951}.Mock|x86.ActiveCfg = Debug|Any CPU
+		{6F69F08D-98F6-4308-A815-ABEE408F9951}.Mock|x86.Build.0 = Debug|Any CPU
+		{6F69F08D-98F6-4308-A815-ABEE408F9951}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F69F08D-98F6-4308-A815-ABEE408F9951}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F69F08D-98F6-4308-A815-ABEE408F9951}.Release|x64.ActiveCfg = Release|Any CPU
+		{6F69F08D-98F6-4308-A815-ABEE408F9951}.Release|x64.Build.0 = Release|Any CPU
+		{6F69F08D-98F6-4308-A815-ABEE408F9951}.Release|x86.ActiveCfg = Release|Any CPU
+		{6F69F08D-98F6-4308-A815-ABEE408F9951}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
